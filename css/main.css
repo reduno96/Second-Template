@@ -75,7 +75,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 100px;
+    height: 101px;
 }
 
 header .container::after {
@@ -142,7 +142,7 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    transition: 0.3s;
+    transition: 0.5s;
     position: relative;
     z-index: 1;
 }
@@ -150,6 +150,7 @@ header nav ul li a {
 header nav ul li a.active,
 header nav ul li a:hover {
     color: var(--main-color);
+    font-size: 18px;
     border-bottom: 1px solid var(--main-color);
 }
 
@@ -169,6 +170,10 @@ header nav .form i {
     transform: translateY(-50%);
     right: 0;
 }
+
+header nav .form i:hover{
+    font-size: 25px;
+} 
 
 /* End Header */
 
@@ -238,6 +243,12 @@ header nav .form i {
     font-size: 30px;
 }
 
+.landing .fa-angle-right:hover,
+.landing .fa-angle-left:hover{
+    font-size: 38px;
+    }
+
+
 .landing .bullets{
     position: absolute;
     left: 50%;
@@ -255,5 +266,15 @@ header nav .form i {
     border: 1px solid #ddd;
     border-radius: 50%;
 }
+
+.landing .bullets li:hover{
+    background-color: #ddd;
+}
+
+.landing .bullets li.active{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
 
 /* End Lading */
