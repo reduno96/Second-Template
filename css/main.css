@@ -21,7 +21,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
 
 ul {
@@ -60,6 +59,41 @@ ul {
 }
 
 /* End Global Rules  */
+
+/* Start Components */
+.main-heading{
+    text-align:center;
+}
+
+.main-heading h2 {
+    position: relative;
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.main-heading h2::before {
+    content:"";
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    height: 3px;
+    width: 120px;
+    bottom: -30%;
+
+}
+
+.main-heading h2::after {
+    content:"";
+}
+
+.main-heading p {
+    
+}
+
+/* End Components */
 
 /* Start Header */
 
@@ -235,9 +269,6 @@ header nav .form i:hover{
 }
 
 @media (max-width: 767px) {
-    /* body{
-        display: none;
-    } */
     .landing .text {
         width:100%;
         text-align: center;
@@ -316,16 +347,28 @@ header nav .form i:hover{
 .landing .fa-angle-left:hover{
     font-size: 45px;
     }
-
+    
+@media screen and (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
 
 .landing .bullets{
     position: absolute;
-    left: 50%;
+    left: 47%;
     transform: translateY(-50%);
-    bottom: 30px;
+    bottom: 25px;
     width: 55px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .landing .bullets{
+        left: 43%;
+
+    }
 }
 
 .landing .bullets li{
@@ -343,13 +386,5 @@ header nav .form i:hover{
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
 }
-
-@media screen and (max-width: 767px) {
-    .landing .change-background {
-    display: none;
-    }
-}
-
-
 
 /* End Lading */
