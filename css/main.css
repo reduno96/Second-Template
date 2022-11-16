@@ -471,7 +471,7 @@ header nav .form i:hover{
     overflow: hidden;
 }
 
-.design::before{
+.design::before {
     content:"";
     position: absolute;
     left: 0;
@@ -481,55 +481,61 @@ header nav .form i:hover{
     height: 100%;
 }
 
-.design .image, .design .text{
+.design .image, .design .text {
     position: relative;
     z-index: 2;
     flex:1;
 }
 
-.design .image{
+.design .image {
     text-align: center;
 }
 
-.design .image img{
+.design .image img {
     position: relative;
     bottom: -140px;
 }
 
-.design .text{
+.design .text {
     color: white;
     padding: 50px;
     background-color: var(--transparent-color);
 }
 
-.design .text h2{
+.design .text h2 {
     font-weight: normal;
     margin-bottom: var(--h2-margin);
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 941px){
-    .design .image{
+@media screen and (max-width: 941px) {
+    .design .image {
     display: none;
     }
 
-    .design .text h2{
+    .design .text h2 {
         text-align:center;
     }
 }
 
-.design .text ul li{
+.design .text ul li {
     padding: 15px 0;
 }
 
-.design .text li::before{
+.design .text li::before {
     font-family: 'Font Awesome 5 free';
     content:'\f3ce'; 
     font-weight: 900;
     margin-right: 20px;
 }
-
-
-
-
 /* End Design */
+
+/* Start Portfolio  */
+.portfolio {
+    
+}
+
+.portfolio .shuffle {
+    
+}
+/* End Portfolio  */
