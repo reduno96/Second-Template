@@ -2,7 +2,9 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
+    --text-color: #777;
     --main-radius: 9px;
+    --padding-section: 100px;
 }
 
 /* End root  */
@@ -74,23 +76,35 @@ ul {
 }
 
 .main-heading h2::before {
-    content:"";
-    position: absolute; 
+    content: "";
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     background-color: #333;
-    height: 3px;
+    height: 2px;
     width: 120px;
-    bottom: -30%;
-
+    bottom: -30px;
 }
 
 .main-heading h2::after {
-    content:"";
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -38px;
 }
 
 .main-heading p {
-    
+    width: 550px;
+    max-width: 100%;
+    margin:0 auto 100px;
+    line-height: 2;
+    color: var(--text-color);
 }
 
 /* End Components */
@@ -318,6 +332,7 @@ header nav .form i:hover{
     .landing .text .content p {
         font-size: 14px;
         line-height: 1.7;
+        max-width: 100%;
 }
 }
 @media (max-height:425px) and (orientation:landscape) {
@@ -333,12 +348,12 @@ header nav .form i:hover{
     color: #ddd;
 }
 
-.landing .fa-angle-left{
+.landing .fa-angle-left {
     left: 30px;
     font-size: 40px;
 }
 
-.landing .fa-angle-right{
+.landing .fa-angle-right {
     right: 30px;    
     font-size: 40px;
 }
@@ -354,37 +369,79 @@ header nav .form i:hover{
     }
 }
 
-.landing .bullets{
+.landing .bullets {
     position: absolute;
-    left: 47%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 25px;
     width: 55px;
     display: flex;
     justify-content: space-between;
 }
 
-@media (max-width: 767px) {
-    .landing .bullets{
-        left: 43%;
-
-    }
-}
-
-.landing .bullets li{
+.landing .bullets li {
     width: 15px;
     height: 15px;
     border: 1px solid #ddd;
     border-radius: 50%;
 }
 
-.landing .bullets li:hover{
+.landing .bullets li:hover { 
     background-color: #ddd;
 }
 
-.landing .bullets li.active{
+.landing .bullets li.active {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
 }
 
 /* End Lading */
+
+/* Start Services */
+.services {
+    padding-top: var(--padding-section);
+}
+
+@media screen and (min-width: 768px){
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+}
+
+.services .srv-box {
+    display: flex;
+}
+
+
+
+.services .srv-box i {
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+@media (max-width: 767px){
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services .srv-box i {
+        margin: 0 0 30px;
+    }
+}
+
+.services .srv-box h3 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.services .srv-box p {
+    line-height: 2;
+    color: var(--text-color);
+}
+/* End Services */
