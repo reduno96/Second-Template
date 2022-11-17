@@ -668,5 +668,19 @@ header nav .form i:hover{
     padding: 10px 20px;
     text-transform: uppercase;
 }
-
 /* End Video */
+
+/* Start About */
+.about {
+    padding-top: var(--padding-section);
+    overflow: hidden;
+    text-align: center;
+}
+
+.about img {
+    position: relative;
+    bottom: -25px;
+    margin-top: -25px;
+    max-width: 100%;
+}
+/* Start About */
