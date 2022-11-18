@@ -136,7 +136,7 @@ header .container {
 header .container::after {
     content: "";
     position: absolute;
-    background-color: brown;
+    background-color: #ccc;
     width: calc(100% - 27px);
     height: 1px;
     bottom: 0;
@@ -795,4 +795,135 @@ header nav .form i:hover{
     text-align: center;
     margin-bottom: 60px;
 }
+
+.our-skills .testimonials .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.our-skills .testimonials img { 
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+} 
+
+@media (max-width: 767px){
+    .our-skills .testimonials .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .our-skills .testimonials img {
+        margin: 0 auto 20px;
+    }
+}
+
+.our-skills .testimonials .text {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+
+.our-skills .testimonials .text p {
+    color: var(--text-color);
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.our-skills .testimonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-skills .testimonials .bullets li {
+    width: 14px;
+    height: 14px; 
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: var(--main-transition);
+}
+
+.our-skills .testimonials .bullets li.active {
+    background-color: var(--main-color);   
+}
+
+.our-skills .testimonials .bullets li:hover { 
+    background-color: #ddd;
+}
+
+.our-skills .testimonials li.active {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.our-skills .skills .prog-holder {
+    margin-bottom: 40px;
+}
+
+.our-skills .skills .prog-holder h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.our-skills .skills .prog-holder .prog {
+    background-color: #dedadc;
+    height: 30px;
+}
+
+.our-skills .skills .prog-holder .prog span {
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+}
+
+.our-skills .skills .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -15px;
+    padding: 4px 0; 
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.our-skills .skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -8px;
+    top: -15px;
+}
 /* End Skills */
+
+/* Start Quotes */
+.quote {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);   
+    background-image: url("../img/quote.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: O; 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /75%);
+}
+/* End Quotes */
