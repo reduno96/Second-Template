@@ -741,4 +741,58 @@ header nav .form i:hover{
         flex-basis: 25%;
     }
 }
+
+.stats .container .box i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: black; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+} 
+
+.stats .container .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+} 
+
+.stats .container .box p {
+    font-size: 14px;
+} 
+
 /* End Stats */
+
+/* Start Skills */
+.our-skills {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);   
+}
+.our-skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    .our-skills .container > div {
+        flex-basis: 45%;
+    }
+}
+
+.our-skills .container > div > h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+    text-align: center; 
+    text-transform: uppercase;
+}
+
+.our-skills .container > div > p {
+    color: var(--text-color);
+    line-height: 2; 
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* End Skills */
