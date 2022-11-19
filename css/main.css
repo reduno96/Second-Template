@@ -921,9 +921,21 @@ header nav .form i:hover{
     content: "";
     position: absolute;
     left: 0;
-    top: O; 
+    top: 0; 
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 /75%);
 }
+
+.quote .container {
+    position: relative;
+}
+
+.quote q {
+    font-size: 30px;
+    margin-bottom: 20px;    
+    display: block;
+}
+
+
 /* End Quotes */
