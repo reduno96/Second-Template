@@ -1096,6 +1096,7 @@ header nav .form i:hover{
     border-left: none;
     padding: 10px 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .subscribe form input[type="email"]:focus,
@@ -1118,3 +1119,99 @@ header nav .form i:hover{
     }
 }
 /* End Subscribe  */
+
+/* Start Contact   */
+.contact {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);  
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px){
+    .contact .content{
+        flex-direction: column;
+    }
+}
+
+.contact .content form {
+    flex-basis: 70%;
+}
+
+.contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contact .content form .main-input:focus {
+outline: none;
+}
+
+.contact .content form textarea.main-input {
+    height: 200px;  
+    resize: none;
+}
+
+.contact .content form input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    border: none; 
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact .content .info {
+    flex-basis: 25%;
+}
+
+@media (max-width: 767px){
+    .contact .content .info {
+        order: -1; 
+        text-align: center;
+    }
+}
+
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact .content .info .phone {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+
+@media (max-width: 767px){
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 30px;   
+    }     
+}
+
+.contact .content .info address {
+    color: var(--text-color);
+    line-height: 2;
+}
+
+@media (max-width: 767px){
+    .contact .content .info address {
+        margin-bottom: 40px;   
+    }     
+}
+/* End Contact   */
