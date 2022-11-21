@@ -1220,7 +1220,7 @@ outline: none;
 .footer{
     padding-top: calc(var(--padding-section) / 2);
     padding-bottom: calc(var(--padding-section) / 2);
-    background-image: url("/img/subscribe.jpg");
+    background-image: url("../img/subscribe.jpg");
     background-size: cover;
     position: relative;
     color: white;
